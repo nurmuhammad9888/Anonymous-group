@@ -1,0 +1,361 @@
+// Cars start
+.cars {
+    padding: 62px 0 100px;
+}
+
+.cars__wrapper {
+    max-width: 575px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cars__title {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: var(--main-color-black);
+}
+
+.cars__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center; 
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: var(--main-color-55);
+}
+
+.cars__list {
+    display: flex;
+    justify-content: center;
+    @include list-unstyle;
+    margin-bottom: 16px;
+}
+
+.cars__item {
+    margin-right: 14px;
+}
+
+.cars__item:nth-of-type(3){
+    margin-right: 0;
+}
+
+.cars__item--active .cars__link {
+    background-color: var( --main-color-green);
+    color: var(--main-bgcolor-white);
+}
+
+.cars__panel {
+    display: none;
+}
+
+.cars__panel--active {
+    display: block;
+}
+
+.cars__link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 14px 20px;
+    color: var(--main-color-black);
+    border: 1.5px solid var(--main-bordercolor);
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.cars__panel-list {
+    @include list-unstyle;
+}
+
+.cars__panel-item {
+    max-width: 358px;
+    width: 100%;
+    margin: 0 auto 10px;
+    padding: 24px 20px;
+    background-color: var(--main-color-f5);
+    border-radius: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cars__panel-item:hover {
+    background-color: var(--main-color-green);
+}
+
+.cars__panel-item:hover .cars__panel__title{
+    color: var(--main-bgcolor-white);
+}
+
+.cars__panel-item:hover .cars__panel__text{
+    color: var(--main-bgcolor-white);
+}
+
+.cars__panel-item:hover .cars__panel-year{
+    color: var(--main-bgcolor-white);
+}
+
+.cars__panel-item:hover .cars__panel-automatic{
+    color: var(--main-bgcolor-white);
+}
+
+.cars__panel-item:hover .cars__year-text::before{
+    background-image: url("../images/User.svg");
+}
+
+.cars__panel-item:hover .cars__year-text:nth-of-type(2):before{
+    background-image: url("../images/Year.svg");
+}
+
+.cars__panel-item:hover .cars__automatic-text::before{
+    background-image: url("../images/automatic.svg");
+}
+
+.cars__panel-item:hover .cars__automatic-text:nth-of-type(2):before{
+    background-image: url("../images/petrol.svg");
+}
+
+
+
+.cars__panel-img {
+    max-width: 358px;
+    width: 100%;
+    margin: 0 auto 10px;
+}
+
+.cars__panel__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: var(--main-color-black);
+}
+
+.cars__panel__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--main-color-55);
+}
+
+.cars__panel-wrapper {
+    display: flex;
+}
+
+.cars__panel-year {
+    margin-right: 58px;
+    color: var(--main-color-black);
+}
+
+.cars__panel-automatic {
+    margin-left: 24px;
+    color: var(--main-color-black);
+}
+
+.cars__year-text {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    margin-left: 26px;
+}
+
+.cars__automatic-text {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.cars__automatic-text:nth-of-type(2){
+    margin-bottom: 0;
+}
+
+.cars__automatic-text::before {
+    position: absolute;
+    top: 1px;
+    left: -26px;
+    background-image: url("../images/cars-automatic.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    content: "";
+}
+
+.cars__automatic-text:nth-of-type(2):before {
+    position: absolute;
+    top: 1px;
+    left: -26px;
+    background-image: url("../images/cars-fuel.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    content: "";
+}
+
+.cars__year-text::before {
+    position: absolute;
+    top: 1px;
+    left: -26px;
+    background-image: url("../images/cars-seats.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    content: "";
+}
+
+.cars__year-text:nth-of-type(2)::before{
+    background-image: url("../images/cars-years.svg");
+}
+
+.cars__year-text:nth-of-type(2){
+    margin-bottom: 0;
+}
+
+.cars__link-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cars__link-btn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 18px 30px;
+    background-color: var(--main-color-green);
+    color: var(--main-bgcolor-white);
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.cars__link-btn:hover {
+    color: var(--main-bgcolor-white);
+}
+
+@include mobile-first(600px){
+    
+    .cars__title {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+}
+
+
+
+@include mobile-first(794px){
+
+    .cars {
+        padding: 87px 0 120px;
+    }
+
+    .cars__title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 10px;
+    }
+    
+    .cars__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .cars__list {
+        margin-bottom: 24px;
+    }
+    
+    .cars__link {
+        padding: 19px 40px;
+    }
+    
+    .cars__panel-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .cars__panel-item {
+        max-width: 375px;
+        width: 100%;
+        padding: 30px 24px;
+        margin-bottom: 20px;
+    }
+
+     
+    .cars__panel-item:nth-of-type(5){
+        margin-bottom: 0;
+    }
+
+    .cars__panel-item:nth-of-type(6){
+        margin-bottom: 0;
+    }
+    
+    .cars__panel__title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .cars__panel__text {
+        font-size: 16px;
+        line-height: 17px;
+    };
+
+    .cars__panel-img {
+        max-width: 387px;
+    }
+}
+
+@include mobile-first(1164px){
+
+    .cars__panel-item{
+        max-width: 387px;
+    }
+}
+
+@include mobile-first(1200px){
+
+    .cars__panel-list {
+        justify-content: space-between;
+    }
+    
+    .cars__panel-item {
+
+        margin-left: 0;
+        margin-right: 8px;
+    }
+    .cars__panel-item:nth-of-type(4){
+        margin-bottom: 0;
+    }
+
+    .cars__link-button {
+        margin-top: 40px;
+    }
+
+}
+
+@include mobile-first(1230px) {
+
+    .cars {
+        padding: 100px 0 160px;
+    }
+
+    .cars__panel-item  {
+        margin-right: 0;
+    }
+
+}
