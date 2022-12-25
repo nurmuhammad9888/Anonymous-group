@@ -26,16 +26,19 @@
     color: var(--main-color-55);
     margin-bottom: 30px;
 }
+
 @include mobile-first(794px){
     .services{
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
     .services__title{
         font-size: 36px;
         line-height: 44px;
         margin-bottom: 10px;
     }
+
     .services__description{
         font-size: 16px;
         line-height: 24px;
@@ -113,9 +116,11 @@
 .services__item:nth-child(2) .services__info-title::after{
     background-image: url("../images/service-Guaranteed.svg");
 }
+
 .services__item:nth-child(3) .services__info-title::after{
     background-image: url("../images/service-Unparalleled.svg");
 }
+
 .services__item:nth-child(4) .services__info-title::after{
     background-image: url("../images/service-No-reservation.svg");
 }
@@ -146,16 +151,20 @@
     line-height: 20px;
     color: var( --main-color-55);
 }
+
 .services__item:hover{
     background-color: var( --main-color-hover-green);
     transition: 0.3s ease-out;
 }
+
 .services__item:hover .services__info-title{
     color: #fff;
 }
+
 .services__item:hover .services__info-text{
     color: var(--main-bgcolor-white);
 }
+
 .services__item:hover .services__info-title::after{
     background-image: url("../images/white-comp.svg");
 }
@@ -172,27 +181,27 @@
     background-image: url("../images/white-info.svg");
 }
 
-
 @include mobile-first(794px){
     .services__item:not(:last-child){
         margin-bottom: 20px;
     }
+
     .services__item{
         margin-bottom: 20px;
     }
+
     .services__list{
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
         margin: 0;
     }
+
     .services__description-wrapper{
         width: 100%;
         max-width: 354px;
     }
 }
-
-
 
 @include mobile-first(1230px){
     

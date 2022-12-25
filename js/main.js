@@ -1,28 +1,28 @@
-
 const elCarsLinks = document.querySelectorAll(".cars__link");
 const elCarsItems = document.querySelectorAll(".cars__item");
 const elPanelItems = document.querySelectorAll(".cars__panel");
 
-
 elCarsLinks.forEach(link => {
-    
     link.addEventListener("click" , evt =>{
         evt.preventDefault();
-
         elCarsItems.forEach(item => {
             item.classList.remove("cars__item--active");
         });
-
         link.parentElement.classList.add("cars__item--active");
-
         elPanelItems.forEach(panel => {
             panel.classList.remove("cars__panel--active")
         });
-
         document.querySelector(link.getAttribute("href")).classList.add("cars__panel--active");
-
+        
     }); 
 })
+
+$('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots:true,
+});
 
 
 // Brand slick js
@@ -76,7 +76,7 @@ $('.community__list').slick({
                 centerMode: true,
                 centerPadding: '0',
                 slidesToShow: 1,
-
+                
             }
         }
     ]

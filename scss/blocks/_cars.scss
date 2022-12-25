@@ -271,8 +271,6 @@
     
 }
 
-
-
 @include mobile-first(794px){
 
     .cars {
@@ -310,7 +308,6 @@
         margin-bottom: 20px;
     }
 
-     
     .cars__panel-item:nth-of-type(5){
         margin-bottom: 0;
     }
