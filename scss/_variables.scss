@@ -1,0 +1,27 @@
+/* VARIABLES */
+
+:root {
+  --main-bgcolor-white:#fff;
+  --main-bghero-white:#fff;
+  --main-color-black:#000;
+  --main-color-f5:#f5f5f5;
+  --main-color-green: #299764;
+  --main-color-hover-green:#077743;
+  --main-color-55:#555555;
+  --main-bordercolor:#e5e7ea;
+  --main-color-google: #4285f4;
+  --main-rgbcolor:linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+  --main-ldginstagram: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+  --main-footercolor-white:#fff;
+  --main-invalid: #ff3b30;
+}
+
+.dark {
+  --main-bgcolor-white:#1c1c1c;
+  --main-color-black:#fff;
+  --main-color-f5:#272727;
+  --main-color-green: #299764;
+  --main-color-55:#fff;
+  --main-bordercolor:#333333;
+  --main-footercolor-white:#000;
+}

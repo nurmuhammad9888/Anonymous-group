@@ -1,0 +1,35 @@
+/* GENERAL */
+
+*{
+  box-sizing: border-box;
+}
+
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+::selection{
+  background-color: darkcyan;
+  color: gold;
+}
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  height: auto;
+}
+
+body{
+@include sticky-footer;
+  font-family: "Montserrat", "Arial", sans-serif; 
+}
+
+/* STICKY-FOOTER */
+.site-main{
+  flex-grow: 1;
+}

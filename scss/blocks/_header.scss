@@ -1,0 +1,19 @@
+.site-header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sitenav__list{
+  display: flex;
+  @include list-unstyle;
+}
+
+.sitenav__item:not(:last-child){
+  margin-right: 30px;
+}
+
+.sitenav__link{
+  color: red;
+  text-decoration: none;
+}
