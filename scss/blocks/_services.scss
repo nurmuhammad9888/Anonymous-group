@@ -1,0 +1,232 @@
+// Service section styles start
+
+.services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services__textbox {
+    max-width: 684px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-color-black);
+    margin-bottom: 6px;
+}
+
+.services__description {
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--main-color-55);
+    margin-bottom: 30px;
+}
+@include mobile-first(794px){
+    .services{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .services__title{
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 10px;
+    }
+    .services__description{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@include mobile-first(1200px){
+    .services__description{
+        margin-bottom: 40px;
+    }
+}
+
+.services__list {
+    @include list-unstyle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__item {
+    position: relative;
+    max-width: 358px;
+    width: 100%;
+    background-color: var(--main-color-f5);
+    border-radius: 20px;
+    padding: 30px 15px 30px 24px;
+    margin: 0 auto;
+}
+
+.services__item:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.services__title-pay{
+    max-width: 185px;
+    width: 100%;
+}
+
+.services__title-reservation{
+    max-width: 228px;
+    width: 100%;
+}
+
+.services__title-customer{
+    max-width: 244px;
+    width: 100%;
+}
+
+.services__title-booking{
+    max-width: 221px;
+    width: 100%;
+}
+
+.services__info-title{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--main-color-black);
+    margin-bottom: 10px;
+}
+
+.services__info-title::after {
+    position: absolute;
+    top: 65px;
+    right: 33px;
+    background-image: url("../images/service-pay.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+    content: "";
+    width: 33.37px;
+    height: 30px;
+    
+}
+
+.services__item:nth-child(2) .services__info-title::after{
+    background-image: url("../images/service-Guaranteed.svg");
+}
+.services__item:nth-child(3) .services__info-title::after{
+    background-image: url("../images/service-Unparalleled.svg");
+}
+.services__item:nth-child(4) .services__info-title::after{
+    background-image: url("../images/service-No-reservation.svg");
+}
+
+.services__description-wrapper--pay{
+    width: 100%;
+    max-width: 312px;
+    padding-right: 40px;
+}
+
+.services__description-wrapper--reservation{
+    width: 100%;
+    max-width: 316px;
+}
+
+.services__description-wrapper--customer{
+    width: 100%;
+    max-width: 316px;
+}
+
+.services__descrption-wrapper--booking{
+    width: 100%;
+    max-width: 319px;
+}
+
+.services__info-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: var( --main-color-55);
+}
+.services__item:hover{
+    background-color: var( --main-color-hover-green);
+    transition: 0.3s ease-out;
+}
+.services__item:hover .services__info-title{
+    color: #fff;
+}
+.services__item:hover .services__info-text{
+    color: var(--main-bgcolor-white);
+}
+.services__item:hover .services__info-title::after{
+    background-image: url("../images/white-comp.svg");
+}
+
+.services__item:nth-child(2):hover .services__info-title::after{
+    background-image: url("../images/white-save.svg");
+}
+
+.services__item:nth-child(3):hover .services__info-title::after{
+    background-image: url("../images/white-lock.svg");
+}
+
+.services__item:nth-child(4):hover .services__info-title::after{
+    background-image: url("../images/white-info.svg");
+}
+
+
+@include mobile-first(794px){
+    .services__item:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .services__item{
+        margin-bottom: 20px;
+    }
+    .services__list{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .services__description-wrapper{
+        width: 100%;
+        max-width: 354px;
+    }
+}
+
+
+
+@include mobile-first(1230px){
+    
+    .services__item{
+        max-width: 590px;
+    }
+    
+    .services__info-title{
+        font-size: 32px;
+        line-height: 39px;
+    }
+    
+    .services__title-pay{
+        width: 100%;
+        max-width: 211px;
+    }
+    
+    .services__title-reservation{
+        width: 100%;
+        max-width: 260px;
+    }
+    
+    .services__title-customer{
+        width: 100%;
+        max-width: 278px;
+    }
+    
+    .services__title-booking{
+        width: 100%;
+        max-width: 288px;
+    }
+    .services__info-title::after{
+        width: 50px;
+        height: 45px;
+    }
+}
+// Service section styles finish
