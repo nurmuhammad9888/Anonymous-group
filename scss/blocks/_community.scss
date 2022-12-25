@@ -5,6 +5,10 @@
     padding: 30px 0;
 }
 
+.community__list .slick-next , .slick-prev{
+    display: none !important;
+}
+
 .community__network {
     max-width: 794px;
     width: 100%;
@@ -196,10 +200,6 @@
     background-image: url("../../images/ButtonHover.svg");
 }
 
-
-
-
-
 @include mobile-first(794px){
     
     .community__network {
@@ -222,8 +222,7 @@
         max-width: 1000px;
         width: 100%;
     }
-    
-    
+
     .community__line {
         transform: rotate(-0deg);
         background: radial-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);;
@@ -255,12 +254,10 @@
         margin-left: 10px;
     }
 
-  
-    
 }
 
 @include mobile-first(1230px){
-
+    
     .community {
         padding: 100px 0;
     }

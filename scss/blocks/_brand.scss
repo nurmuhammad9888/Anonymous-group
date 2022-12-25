@@ -29,12 +29,12 @@
     object-fit: cover;
 }
 
-.slick-next , .slick-prev{
+.brand__list .slick-next , .slick-prev{
     display: none !important;
 }
 
 @include mobile-first(794px){
-
+    
     .brand {
         padding: 120px 0;
     }

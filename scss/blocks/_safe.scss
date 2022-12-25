@@ -1,4 +1,5 @@
 //    Safe section styles start
+
 .safe {
     padding-bottom: 100px;
 }
@@ -54,21 +55,33 @@
     background-color: var(--main-color-hover-green);
     transition: 0.3s ease-out;
 }
+
 .safe__item:hover .safe__list-text::before{
     background-image: url("../images/hover-himya.svg")
 }
+
 .safe__item:nth-child(2):hover .safe__list-text::before{
     background-image: url("../images/hover-heart.svg")
 }
+
 .safe__item:nth-child(3):hover .safe__list-text::before{
     background-image: url("../images/hover-lock-screen.svg")
 }
+
+.dark .safe__item .safe__list-text::before{
+    background-image: url("../images/hover-himya.svg")
+}
+.dark .safe__item:nth-child(2) .safe__list-text::before{
+    background-image: url("../images/hover-heart.svg")
+}
+.dark .safe__item:nth-child(3) .safe__list-text::before{
+    background-image: url("../images/hover-lock-screen.svg")
+}
+
 .safe__item:hover .safe__list-text{
     color: var( --main-bgcolor-white)
 }
 
-@include mobile-first(520px){
-}
 .safe__list{
     @include list-unstyle;
 }
@@ -100,15 +113,19 @@
     width: 18px;
     height: 24px;
 }
+
 .safe__item:nth-child(2) .safe__list-text::before{
     background-image: url("../images/service-heart.svg");
     width: 24px;
 }
+
 .safe__item:nth-child(3) .safe__list-text::before{
     background-image: url("../images/service-lock.svg");
     width: 26px;
 }
+
 @include mobile-first(600px){
+
     .safe__list{
         display: flex;
         align-items: center;
@@ -130,7 +147,9 @@
         margin-left: auto;
     }
 }
+
 @include mobile-first(794px){
+
     .safe{
         padding-bottom: 120px;
     }
@@ -177,6 +196,7 @@
     .safe{
         padding-bottom: 160px;
     }
+
     .safe__wrapper::after{
         top: 62px;
         right: 70px;
@@ -184,16 +204,20 @@
         width: 386px;
         height: 452px;
     }
+
     .safe__item{
         max-width: 200px;
         padding: 79px 15px 15px 15px;
     }
+
     .safe__item:not(:last-child){
         margin-right: 10px;
     }
+
     .safe__textbox{
         margin-bottom: 94px;
     }
+    
     .safe__list-text{
         font-size: 16px;
     }
