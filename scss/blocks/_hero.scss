@@ -1,0 +1,127 @@
+.hero {
+}
+
+.hero-list {
+    @include list-unstyle;
+    margin: 0 auto;
+}
+
+.hero-item {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url('../../images/hero-malibu.jpg');
+    background-repeat: no-repeat;
+    background-size: 608px 300px;
+    background-position: center;
+}
+
+.hero-text-wrap {
+    width: 100%;
+    max-width: 283px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    margin-top: 0;
+    padding-top: 40px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--main-bghero-white);
+}
+
+.hero-text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: var(--main-bghero-white);
+}
+
+.hero-form {
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.hero-form-input {
+    position: absolute;
+    top: -35px;
+    width: 100%;
+    max-width: 600px;
+    padding: 22px 30px;
+    background: #FFFFFF;
+    border: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #555555;
+}
+
+.hero-icon-wrap{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-search-icon {
+    position: absolute;
+    top: -32px;
+    right: 4px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #299764;
+    background-image: url("../../images/hero-search-input.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@include mobile-first(794px){
+    .hero-item {
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        background-image: url('../../images/hero-malibu.jpg');
+        background-repeat: no-repeat;
+        background-size: 908px 500px;
+        background-position: center;
+    }
+    
+    .hero-text-wrap {
+        max-width: 416px;
+    }
+    
+    .hero-title {
+        padding-top: 60px;
+        margin-bottom: 10px;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    
+    .hero-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+@include mobile-first(1200px){
+    .hero-item {
+        width: 100%;
+        max-width: 1200px;
+        height: 500px;
+        background-image: url('../../images/hero-malibu.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
