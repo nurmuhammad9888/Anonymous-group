@@ -122,7 +122,21 @@
     background-image: url("../images/petrol.svg");
 }
 
+.dark .cars__year-text::before{
+    background-image: url("../images/User.svg");
+}
 
+.dark .cars__year-text:nth-of-type(2):before{
+    background-image: url("../images/Year.svg");
+}
+
+.dark .cars__automatic-text::before{
+    background-image: url("../images/automatic.svg");
+}
+
+.dark .cars__automatic-text:nth-of-type(2):before{
+    background-image: url("../images/petrol.svg");
+}
 
 .cars__panel-img {
     max-width: 358px;
