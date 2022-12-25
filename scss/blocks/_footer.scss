@@ -37,12 +37,11 @@
 }
 .site__footer-links-wrapper {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap; 
 }
 .site__footer-list {
     @include list-unstyle;
-  
-    
 }
 .site__footer-item:first-child{
     margin-bottom: 16px;
@@ -64,7 +63,31 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: var(--main-color-black);
+    color: var(--main-color-55);
     text-decoration: none;
     font-style: normal;
+}
+.site__footer-link:hover{
+    color:  var(--main-color-black);
+    text-decoration: underline;
+}
+
+@include mobile-first(794px){
+    .site__footer-desc{
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+    .site__footer-logo{
+        width: 150px;
+        height: 40px;
+    }
+    .site__footer-textbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .site__footer-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
 }
