@@ -1,0 +1,203 @@
+//    Safe section styles start
+.safe {
+    padding-bottom: 100px;
+}
+
+.safe__wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: var( --main-bgcolor-white);
+    border: 1.5px solid #e5e7ea;
+    border-radius: 20px;
+    padding: 24px 20px 24px 20px;
+}
+
+.safe__wrapper::after{
+    position: absolute;
+    top: -55px;
+    right: -70px;
+    display: inline-block;
+    content: "";
+    background-image: url("../images/sircle.svg");
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 160px;
+}
+
+.safe__textbox {
+    width: 100%;
+    max-width: 447px;
+    margin-bottom: 40px;
+}
+
+.safe__text-wrappers {
+    width: 100%;
+    max-width: 183px;
+}
+
+.safe__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-color-black);
+    margin-bottom: 6px;
+}
+
+.safe__text {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--main-color-55);
+    margin:0;
+}
+
+.safe__item:hover{
+    background-color: var(--main-color-hover-green);
+    transition: 0.3s ease-out;
+}
+.safe__item:hover .safe__list-text::before{
+    background-image: url("../images/hover-himya.svg")
+}
+.safe__item:nth-child(2):hover .safe__list-text::before{
+    background-image: url("../images/hover-heart.svg")
+}
+.safe__item:nth-child(3):hover .safe__list-text::before{
+    background-image: url("../images/hover-lock-screen.svg")
+}
+.safe__item:hover .safe__list-text{
+    color: var( --main-bgcolor-white)
+}
+
+@include mobile-first(520px){
+}
+.safe__list{
+    @include list-unstyle;
+}
+.safe__item {
+    position: relative;
+    width: 100%;
+    max-width: 318px;
+    background-color: var(--main-color-f5);
+    border-radius: 16px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 70px 6px 14px 14px;
+}
+
+.safe__list-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--main-color-black);
+}
+.safe__list-text::before{
+    position: absolute;
+    top: 24px;
+    right: 26px;
+    content: "";
+    display: inline-block;
+    background-image: url("../images/service-clean.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 24px;
+}
+.safe__item:nth-child(2) .safe__list-text::before{
+    background-image: url("../images/service-heart.svg");
+    width: 24px;
+}
+.safe__item:nth-child(3) .safe__list-text::before{
+    background-image: url("../images/service-lock.svg");
+    width: 26px;
+}
+@include mobile-first(600px){
+    .safe__list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .safe__item{
+        max-width: 250px;
+    }
+    .safe__text-wrappers{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .safe__textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@include mobile-first(794px){
+    .safe{
+        padding-bottom: 120px;
+    }
+    .safe__wrapper::after{
+        top: 93px;
+        right: 20px;
+        background-image: url("../images/man-services.png");
+        width: 284px;
+        height: 367px;
+    }
+    
+    .safe__textbox{
+        align-items: flex-start;
+        text-align: start;
+        margin: 0 0 35px 0;
+    }
+    .safe__text-wrappers{
+        max-width: none;
+        text-align: start;
+    }
+    .safe__title{
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 10px;
+    }
+    .safe__list{
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+    .safe__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        max-width: 140px;
+        margin: 0;
+        padding: 63px 10px 14px 10px;
+    }
+    .safe__item:not(:last-child){
+        margin-right: 8px;
+    }
+}
+
+@include mobile-first(1200px){
+    .safe{
+        padding-bottom: 160px;
+    }
+    .safe__wrapper::after{
+        top: 62px;
+        right: 70px;
+        background-image: url("../images/man-destop.png");
+        width: 386px;
+        height: 452px;
+    }
+    .safe__item{
+        max-width: 200px;
+        padding: 79px 15px 15px 15px;
+    }
+    .safe__item:not(:last-child){
+        margin-right: 10px;
+    }
+    .safe__textbox{
+        margin-bottom: 94px;
+    }
+    .safe__list-text{
+        font-size: 16px;
+    }
+}
+
+//    Safe section styles finish
+
