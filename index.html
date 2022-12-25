@@ -9,45 +9,88 @@
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>54-dars</title>
+  <title>Car rental</title>
 </head>
 <body>
+
   
   <!-- <header class="site-header">
+
+  <header class="site-header">
+
     <div class="container">
       <div class="site-header__inner">
-        <a class="logo" href="./index.html">
-          <img src="https://picsum.photos/id/80/150/100"
-          width="150"
-          height="100"
-          alt="Template logo">
-        </a>
+        <div class="site-header-logo-wrap">
+          <a class="site-header-logo" href="./index.html">
+            <img src="./images/site-logo.svg"
+            width="150"
+            height="40"
+            alt="site logo">
+          </a>
+          <button class="site-header-burger-btn" type="button"><img class="site-header-burger-btn-img" src="./images/burger-open.svg" width="40" height="20" alt="bueger open btn"></button>
+        </div>
+        
         <nav class="site-header__sitenav sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">
-                Link
+          <div class="sitenav__blok-nav">
+            <div class="sitenav-logo-wrap-mob">
+              <a class="sitenav-logo" href="./index.html">
+                <img src="./images/site-logo.svg"
+                width="150"
+                height="40"
+                alt="site logo">
               </a>
+              <button class="site-header-burger-btn-mob" type="button"><img class="site-header-burger-btn-mob-img" src="./images/close-burger.svg" width="40" height="20" alt="bueger close btn"></button>
+            </div>
+            
+            <ul class="sitenav__list">
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Categories</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">About Us</a>
+                <ul class="sitenav__list-about">
+                  <li class="sitenav__item-about">
+                    <a class="sitenav__about-link" href="#">News</a>
+                  </li>
+                  <li class="sitenav__item-about">
+                    <a class="sitenav__about-link" href="#">Careers</a>
+                  </li>
+                  <li class="sitenav__item-about">
+                    <a class="sitenav__about-link" href="#">Locations</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#"> Help center</a>
+                <ul class="sitenav__list-help">
+                  <li class="sitenav__item-help">
+                    <a class="sitenav__link-help" href="#">FAQ</a>
+                  </li>
+                  <li class="sitenav__item-help">
+                    <a class="sitenav__link-help" href="#">Contact us</a>
+                  </li>
+                </ul>
+                <li class="sitenav__item">
+                  <a class="sitenav__link-number" href="tel:+18554200000">+1 855 420 0000</a>
+                </li>
+              </li>
+            </ul>
+          </div>
+          <ul class="sitenav__rigister-list">
+            <li class="sitenav__rigister-item">
+              <a class="sitenav__rigister-number" href="tel:+18554200000">+1 855 420 0000</a>
             </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">
-                Link
-              </a>
+            <li class="sitenav__rigister-item">
+              <button class="sitenav__rigister-dark-btn"></button>
             </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">
-                Link
-              </a>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">
-                Link
-              </a>
+            <li class="sitenav__rigister-item">
+              <a class="sitenav__rigister-link-login" href="#">Login</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
+
   </header> -->
   
   
@@ -561,5 +604,58 @@
   <script src="slick/slick.min.js"></script>
   <script src="js/main.js"></script>
   
+
+    <span class="line"></span>
+  </header>
+  
+  <section class="hero">
+    <div class="container">
+      <ul class="hero-list">
+        <li class="hero-item">      
+          <div class="hero-text-wrap">
+            <h1 class="hero-title">Compact cars</h1>
+            <p class="hero-text">Rent cars as you are comfortable and where you are comfortable.</p>
+          </div>
+        </li>
+        <!-- <li class="hero-item">      
+          <div class="hero-text-wrap">
+            <h1 class="hero-title">Sports cars</h1>
+            <p class="hero-text">Rent cars as you are comfortable and where you are comfortable.</p>
+          </div>
+        </li>
+        <li class="hero-item">      
+          <div class="hero-text-wrap">
+            <h1 class="hero-title">Vans</h1>
+            <p class="hero-text">Rent cars as you are comfortable and where you are comfortable.</p>
+          </div>
+        </li> -->
+      </ul>
+      <form class="hero-form" action="#" method="POST" autocomplete="off">
+        <input class="hero-form-input" type="search" name="search" aria-label="search" placeholder="Find the car of your dreams">
+        <div class="hero-icon-wrap">
+          <span class="hero-search-icon"></span>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="modal-login">
+    <div class="container">
+      <h3 class="modal-title"></h3>
+      <p class="modal-text"></p>
+      <button class="modal-close-btn"></button>
+      <form action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
+        <input type="email" name="email" aria-label="your email" placeholder="Email">
+        <span>Entered the wrong password</span>
+  
+        <input type="password" name="password" aria-label="your password" placeholder="Password">
+        <span>Entered the wrong password</span>
+        <p>I want to create an account</p>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <script src="./js/main.js"></script>
+
 </body>
 </html>
